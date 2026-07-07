@@ -1,0 +1,6 @@
+{
+  "name": "Cartoon Period Tracker",
+  "description": "A fun, cartoon-vibe period tracker with an interactive mascot, custom symptom stickers, cute decorations, and local storage cycle analytics.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

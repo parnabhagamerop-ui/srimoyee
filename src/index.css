@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=DynaPuff:wght@400..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Fredoka", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "DynaPuff", monospace;
+  --color-primary: #FF8FAB;
+  --color-secondary: #9BF6FF;
+  --color-accent: #FDFFB6;
+  --color-mint: #B9FBC0;
+}
+
+/* -----------------------------------------
+   CUTE GOTHIC PLUM DARK THEME STYLING
+   ----------------------------------------- */
+
+body {
+  background-color: #0A0205 !important;
+  color: #FFF0F4 !important;
+}
+
+/* Base Bento styling */
+.bubbly-shadow {
+  box-shadow: 6px 6px 0px 0px #050002 !important;
+}
+
+.bubbly-shadow-sm {
+  box-shadow: 4px 4px 0px 0px #050002 !important;
+}
+
+.bubbly-shadow-inset {
+  box-shadow: inset 0 4px 0px 0px rgba(0, 0, 0, 0.4) !important;
+}
+
+.border-bubbly {
+  border: 4px solid #4D1A25 !important;
+}
+
+.border-bubbly-sm {
+  border: 2px solid #4D1A25 !important;
+}
+
+/* Custom Bento-specific dark card classes */
+.bento-card-pink {
+  background-color: #4C1925 !important;
+  border: 4px solid #5C222E !important;
+  color: #FFF0F4 !important;
+}
+
+.bento-card-blue {
+  background-color: #163640 !important;
+  border: 4px solid #234E5C !important;
+  color: #E2FAFC !important;
+}
+
+.bento-card-yellow {
+  background-color: #403D1A !important;
+  border: 4px solid #5C5826 !important;
+  color: #FCFAD2 !important;
+}
+
+.bento-card-green {
+  background-color: #173820 !important;
+  border: 4px solid #255C33 !important;
+  color: #E6FCEB !important;
+}
+
+.bento-card-purple {
+  background-color: #2F1E40 !important;
+  border: 4px solid #462F5C !important;
+  color: #F3ECFC !important;
+}
+
+.bento-card-white {
+  background-color: #1D0A0F !important;
+  border: 4px solid #3A141D !important;
+  color: #FFF0F4 !important;
+}
+
+/* --- GLOBAL APP ROOT DARK OVERRIDES --- */
+#app-root {
+  background-color: #0A0205 !important;
+}
+
+#mobile-mockup-frame {
+  background-color: #140509 !important;
+  border-color: #4D1A25 !important;
+  box-shadow: 12px 12px 0px 0px #050002 !important;
+}
+
+/* Override all hardcoded whites */
+#mobile-mockup-frame .bg-white,
+#mobile-mockup-frame .bg-\[\#FFFFFF\],
+#mobile-mockup-frame header {
+  background-color: #1E0A0E !important;
+}
+
+#mobile-mockup-frame .bg-\[\#FFF0F5\],
+#mobile-mockup-frame .bg-pink-50,
+#mobile-mockup-frame .bg-\[\#FFFDFE\],
+#mobile-mockup-frame .bg-[#FFFDF0],
+#mobile-mockup-frame .bg-\[\#FFFDF0\] {
+  background-color: #140509 !important;
+}
+
+/* Set dark input boxes, text fields and dropdown selects */
+#mobile-mockup-frame input[type="text"],
+#mobile-mockup-frame input[type="date"],
+#mobile-mockup-frame input[type="number"],
+#mobile-mockup-frame select,
+#mobile-mockup-frame textarea {
+  background-color: #260F15 !important;
+  color: #FFF0F4 !important;
+  border: 3px solid #4D1A25 !important;
+}
+
+#mobile-mockup-frame input::placeholder,
+#mobile-mockup-frame textarea::placeholder {
+  color: rgba(255, 240, 244, 0.4) !important;
+}
+
+/* Force dark border-colors globally on bubbly line elements */
+#mobile-mockup-frame *,
+#mobile-mockup-frame .border-\[\#3D0C11\],
+#mobile-mockup-frame .border-b-4,
+#mobile-mockup-frame .border-b-3,
+#mobile-mockup-frame .border-t-3,
+#mobile-mockup-frame .border-2,
+#mobile-mockup-frame .border-3,
+#mobile-mockup-frame .border-bubbly-sm {
+  border-color: #4D1A25 !important;
+}
+
+/* High contrast white/pink/peach font coloring for text */
+#mobile-mockup-frame .text-\[\#3D0C11\],
+#mobile-mockup-frame .text-gray-900,
+#mobile-mockup-frame .text-gray-800,
+#mobile-mockup-frame .text-gray-700,
+#mobile-mockup-frame h1,
+#mobile-mockup-frame h2,
+#mobile-mockup-frame h3,
+#mobile-mockup-frame h4,
+#mobile-mockup-frame .text-zinc-800 {
+  color: #FFF0F4 !important;
+}
+
+#mobile-mockup-frame .text-gray-600,
+#mobile-mockup-frame .text-gray-500,
+#mobile-mockup-frame .text-zinc-500 {
+  color: #D6A4B0 !important;
+}
+
+#mobile-mockup-frame .text-pink-500,
+#mobile-mockup-frame .text-\[\#FF7597\] {
+  color: #FF8FAB !important;
+}
+
+/* Buttons overriding */
+#mobile-mockup-frame .bg-[#FF7597],
+#mobile-mockup-frame .bg-pink-500,
+#mobile-mockup-frame .bg-pink-400 {
+  background-color: #FF7597 !important;
+  color: #FFFFFF !important;
+}
+
+#mobile-mockup-frame button:not(.bg-gray-50) {
+  transition: all 0.2s ease-in-out;
+}
+
+#mobile-mockup-frame button:active {
+  transform: scale(0.95);
+}
+
+/* Onboarding Overrides */
+#onboarding-root {
+  background-color: #140509 !important;
+  color: #FFF0F4 !important;
+}
+
+#onboarding-root .bg-white {
+  background-color: #1E0A0E !important;
+}
+
+/* Calendar Day Cells override */
+#calendar-view-root {
+  background-color: #1E0A0E !important;
+}
+
+#calendar-view-root .bg-gray-50 {
+  background-color: #2A1116 !important;
+}
+
+#calendar-view-root .bg-gray-50:hover {
+  background-color: #3D1A22 !important;
+}
+
+#calendar-view-root .text-pink-700 {
+  color: #FFA6BD !important;
+}
+
+#calendar-view-root .bg-pink-50\/70 {
+  background-color: rgba(255, 117, 151, 0.15) !important;
+}
+
+#calendar-view-root .bg-\[\#FF7597\]\/20 {
+  background-color: rgba(255, 117, 151, 0.25) !important;
+}
+
+#calendar-view-root .bg-yellow-50 {
+  background-color: rgba(253, 255, 182, 0.12) !important;
+}
+
+#calendar-view-root .text-yellow-700 {
+  color: #FDFEAA !important;
+}
+
+#calendar-view-root .bg-emerald-50 {
+  background-color: rgba(185, 251, 192, 0.12) !important;
+}
+
+#calendar-view-root .text-emerald-700 {
+  color: #A4FBAE !important;
+}
+
+/* Chat view bubbles */
+#chat-messages-container .bg-\[\#B9FBC0\],
+#chat-messages-container .bg-emerald-50,
+#chat-messages-container .bg-green-100 {
+  background-color: #B9FBC0 !important; /* solid mint green */
+}
+
+#chat-messages-container .bg-\[\#FFCAD4\]\/30,
+#chat-messages-container .bg-pink-100,
+#chat-messages-container .bg-pink-50 {
+  background-color: #FFCAD4 !important; /* solid cute pink for Pavoo AI */
+}
+
+/* Force bubble content, text paragraphs and elements to be solid legible BLACK as requested */
+#chat-messages-container div[class*="rounded-2xl"],
+#chat-messages-container div[class*="rounded-2xl"] p,
+#chat-messages-container div[class*="rounded-2xl"] span,
+#chat-messages-container div[class*="rounded-2xl"] strong {
+  color: #000000 !important;
+  font-weight: 600 !important;
+}
+
+#chat-messages-container div[class*="rounded-2xl"] .opacity-60,
+#chat-messages-container div[class*="rounded-2xl"] span.ml-auto {
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+
+#chat-messages-container div[class*="rounded-2xl"] button {
+  color: #3D0C11 !important;
+}
+
+/* Selected symptom quick buttons */
+.bg-rose-100 {
+  background-color: #4A1724 !important;
+}
+
+.text-rose-700 {
+  color: #FFA6BD !important;
+}
+
+.bg-blue-100 {
+  background-color: #12343E !important;
+}
+
+.text-blue-700 {
+  color: #9BF6FF !important;
+}
+
+.bg-purple-100 {
+  background-color: #2F1E40 !important;
+}
+
+.text-purple-700 {
+  color: #D0D1FF !important;
+}
+
+/* Sparkle rewards and status bar */
+.text-pink-600 {
+  color: #FFA6BD !important;
+}
+
+.bg-pink-100 {
+  background-color: #38121B !important;
+}
+
+/* Dialogue bubble of Mascot - Beautiful, solid butter yellow with black text */
+#mascot-container .bg-white {
+  background-color: #FDFFB6 !important; /* Cute buttery yellow bubble */
+  color: #000000 !important; /* Legible solid black font */
+  border-color: #4D1A25 !important;
+}
+
+#mascot-container .bg-white p,
+#mascot-container .bg-white span {
+  color: #000000 !important;
+  font-weight: 600 !important;
+}
+
+#mascot-container .bg-white div {
+  background-color: #FDFFB6 !important;
+  border-color: #4D1A25 !important;
+}
+
+/* Custom details overrides inside the mobile frame to guarantee optimal dark theme readability */
+#mobile-mockup-frame .bg-pink-50:not(#chat-messages-container *),
+#mobile-mockup-frame .bg-pink-100:not(#chat-messages-container *) {
+  background-color: #38121B !important;
+  color: #FFF0F4 !important;
+}
+
+#mobile-mockup-frame .bg-yellow-50,
+#mobile-mockup-frame .bg-amber-50 {
+  background-color: #383412 !important;
+  color: #FFF0F4 !important;
+}
+
+#mobile-mockup-frame .bg-purple-50 {
+  background-color: #241338 !important;
+  color: #FFF0F4 !important;
+}
+
+#mobile-mockup-frame .text-pink-700,
+#mobile-mockup-frame .text-pink-800 {
+  color: #FFA6BD !important;
+}
+
+#mobile-mockup-frame .text-amber-700,
+#mobile-mockup-frame .text-yellow-700 {
+  color: #FDFEAA !important;
+}
+
+#mobile-mockup-frame .text-purple-700 {
+  color: #D0D1FF !important;
+}
+
+#mobile-mockup-frame .text-purple-500 {
+  color: #A3A5FF !important;
+}
+
+#mobile-mockup-frame .bg-gray-100 {
+  background-color: #2A1116 !important;
+  color: #FFF0F4 !important;
+}
+
+#mobile-mockup-frame .text-gray-500,
+#mobile-mockup-frame .text-gray-600 {
+  color: #D6A4B0 !important;
+}
+
+/* Scrollbars styling for webkit */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #140509;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4D1A25;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF7597;
+}
+
+/* Google Sign-In Button styles */
+.gsi-material-button {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-appearance: none;
+  background-color: #FFFFFF !important;
+  background-image: none;
+  border: 2px solid #3D0C11 !important;
+  border-radius: 12px !important;
+  box-sizing: border-box;
+  color: #1F1F1F !important;
+  cursor: pointer;
+  font-family: 'JetBrains Mono', 'Inter', monospace;
+  font-size: 11px;
+  font-weight: 800;
+  height: 36px;
+  letter-spacing: 0.25px;
+  outline: none;
+  overflow: hidden;
+  padding: 0 12px;
+  position: relative;
+  text-align: center;
+  transition: background-color .218s, border-color .218s, box-shadow .218s;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: auto;
+  max-width: 400px;
+  min-width: min-content;
+  display: inline-block;
+}
+
+.gsi-material-button .gsi-material-button-icon {
+  height: 18px;
+  margin-right: 8px;
+  min-width: 18px;
+  width: 18px;
+}
+
+.gsi-material-button .gsi-material-button-content-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 100%;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.gsi-material-button .gsi-material-button-contents {
+  flex-grow: 1;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 800;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+  color: #000000 !important;
+}
+
+.gsi-material-button .gsi-material-button-state {
+  transition: opacity .218s;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.gsi-material-button:hover {
+  background-color: #F8F9FA !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.gsi-material-button:active {
+  background-color: #EEEEEE !important;
+}
+
